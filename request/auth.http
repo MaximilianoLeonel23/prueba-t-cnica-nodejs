@@ -1,0 +1,30 @@
+# Create new user
+POST http://localhost:3000/auth/register HTTP/1.1
+content-type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "admin"
+}
+
+###
+
+# Login user
+
+POST http://localhost:3000/auth/login HTTP/1.1
+content-type: application/json
+
+
+# {
+#     "email": "user@user.com",
+#     "password": "user"
+# }
+
+{
+    "email": "admin@gmail.com",
+    "password": "admin"
+}
+
+
+
+

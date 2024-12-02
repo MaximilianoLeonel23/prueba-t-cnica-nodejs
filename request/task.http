@@ -1,0 +1,30 @@
+# Get all tasks
+GET http://localhost:3000/tasks?page=2&size=10 HTTP/1.1
+
+###
+
+# Create new Task
+POST http://localhost:3000/tasks HTTP/1.1
+content-type: application/json
+
+{
+ "title": "Titulo provisoriffo",
+ "description": "Descrifffption"
+}
+
+###
+
+# Update task
+PUT http://localhost:3000/tasks/48cf55ae-9dd1-48de-87ce-777c478dbfa2 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Tasks 124"
+}
+
+###
+
+# Delete task
+
+DELETE http://localhost:3000/tasks/8ba0e262-e2e0-45e5-921b-1a9cc1b8d047 HTTP/1.1
+content-type: application/json
